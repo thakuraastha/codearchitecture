@@ -1,36 +1,67 @@
 # codearchitecture
+# Interactive Tutorial App
 
-# Problem-Solving Tutorial App
+An interactive web application that offers tutorials on problem-solving. The app features videos, animations, quizzes, and personalized recommendations based on individual strengths and weaknesses.
 
-This Python code creates an app that offers interactive tutorials on problem-solving using videos, animations, and quizzes. The app also analyzes user data to provide personalized recommendations for practice problems or learning resources based on individual strengths and weaknesses.
+## Features
 
-## Installation
+- User registration and authentication
+- Interactive tutorials with videos and animations
+- Quizzes to test understanding
+- Personalized recommendations for practice problems and learning resources
 
-To run this app, you will need to have the following software installed:
+## Technologies
 
-- Python 3.7 or higher
-- Flask
-- OpenCV
-- Scikit-learn
+- Flask (Python web framework)
+- SQLite (database)
+- HTML, CSS, and JavaScript (frontend)
 
-Once you have installed these dependencies, you can run the app by running the following command in your terminal:
+## Setup
 
-```
-python app.py
-```
+1. Clone the repository:
 
-This will start the Flask server and you can access the app by opening a web browser and navigating to `http://localhost:5000`.
+   ```
+   git clone https://github.com/your_username/interactive-tutorial-app.git
+   cd interactive-tutorial-app
+   ```
+
+2. Install the required Python packages:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Initialize the database:
+
+   ```
+   python init_db.py
+   ```
+
+4. Run the Flask app:
+
+   ```
+   export FLASK_APP=app.py
+   export FLASK_ENV=development
+   flask run
+   ```
+
+5. Open your web browser and navigate to `http://127.0.0.1:5000/` to access the app.
 
 ## Usage
 
-When you first open the app, you will be presented with a tutorial on problem-solving that includes videos, animations, and quizzes. After completing the tutorial, you will be asked to provide some data about yourself to help personalize the app. The app will ask you to perform a series of hand movements while it captures video data. This data is used to analyze your strengths and weaknesses in problem-solving.
-
-After collecting your data, the app will provide personalized recommendations for practice problems or learning resources based on your individual needs. These recommendations can be accessed by clicking on the "Recommendations" button in the app.
+1. Register for an account or log in with your existing credentials.
+2. Browse the available tutorials and select one to begin learning.
+3. Interact with the tutorial content, including videos, animations, and other elements.
+4. Complete quizzes to test your understanding of the material.
+5. Access personalized recommendations for practice problems and learning resources based on your performance.
 
 ## Contributing
 
-If you would like to contribute to this project, please fork the repository and submit a pull request. We welcome contributions of all kinds, including bug fixes, new features, and improvements to the user interface.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-This project is licensed under the MIT License. You are free to use, modify, and distribute this code as you see fit. See the LICENSE file for more details.
+[MIT](https://choosealicense.com/licenses/mit/)
+```
+
+Make sure to replace `your_username` with your actual GitHub username and update the project URL accordingly. Adjust the content as needed to accurately reflect your application's features and setup instructions.
